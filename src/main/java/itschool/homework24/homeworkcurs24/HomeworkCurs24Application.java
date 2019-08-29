@@ -29,15 +29,6 @@ public class HomeworkCurs24Application {
 			markup.save(new Markup(4,"markup1",3));
 			markup.save(new Markup(2,"markup1",1));
 
-			System.out.println("by owner");
-			repo.findAllByOwner("Cipri")
-					.forEach(System.out::println);
-			repo.findFirtstByOwnerOrderByDocumentId("Steli")
-					.ifPresent(System.out::println);
-			System.out.println("- - - - - - - - - - - - -");
-			System.out.println("all");
-			repo.findAll()
-					.forEach(System.out::println);
 		};
 	}
 
